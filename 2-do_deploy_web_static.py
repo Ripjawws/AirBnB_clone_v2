@@ -4,7 +4,7 @@
 
 
 from fabric.api import env, run, put
-import os.path
+import os
 
 
 env.hosts = ['35.196.163.39', '35.185.33.80']
