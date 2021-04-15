@@ -14,7 +14,7 @@ def do_deploy(archive_path):
     """ This function takes the path of the archive
         and uploads it to the servers
     """
-    if not os.path.exist(archive_path):
+    if not os.path.exists(archive_path):
         return False
 
     file_ext = archive_path[archive_path.find('/') + 1:]
