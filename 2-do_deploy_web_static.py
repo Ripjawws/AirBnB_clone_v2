@@ -29,8 +29,8 @@ def do_deploy(archive_path):
     if result.failed:
         return False
 
-    result = run('tar -xzf /tmp/' + file_ext + ' -C /data/web_static/releases/'
-                 + file_name + '/')
+    result = run('tar -xzf /tmp/' + file_ext +
+                 ' -C /data/web_static/releases/' + file_name + '/')
     if result.failed:
         return False
 
@@ -43,8 +43,8 @@ def do_deploy(archive_path):
     if result.failed:
         return False
 
-    result = run('rm -rf /data/web_static/releases/'
-                 + file_name + '/web_static')
+    result = run('rm -rf /data/web_static/releases/' + file_name +
+                 '/web_static')
     if result.failed:
         return False
 
