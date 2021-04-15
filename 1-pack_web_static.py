@@ -18,6 +18,6 @@ def do_pack():
     local(command1)
     com = local(command2)
     if com.return_code == 0:
-        return (com)
+        return (file_name)
     else:
         return None
