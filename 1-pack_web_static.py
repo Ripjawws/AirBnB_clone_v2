@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-""" This module uses fabric to execute
-    Commands locally
+""" 
+This module uses Fabric to execute
+Commands locally
 """
 
 from fabric.api import local

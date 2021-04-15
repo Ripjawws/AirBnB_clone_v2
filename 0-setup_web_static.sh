@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Prepare server
+# Preparing server
 apt-get update
 apt-get -y install nginx
 mkdir -p /data/web_static/releases/test
