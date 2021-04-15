@@ -4,6 +4,7 @@
 
 
 from fabric.api import env, run, put
+import os.path
 
 
 env.hosts = ['35.196.163.39', '35.185.33.80']
@@ -13,6 +14,8 @@ def do_deploy(archive_path):
     """ This function takes the path of the archive
         and uploads it to the servers
     """
+    if not os.path.exist(archive_path):
+        return False
 
     file_ext = archive_path[archive_path.find('/') + 1:]
     file_name = archive_path[archive_path.find('/') + 1: -4]
