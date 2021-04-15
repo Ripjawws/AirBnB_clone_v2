@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" This module uses fabric to deploy files to a server
+""" This module uses fabric to
+    deploy files to a server
 """
 
 
